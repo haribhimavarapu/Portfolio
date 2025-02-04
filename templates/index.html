@@ -6,96 +6,39 @@
   <title>Hari's Portfolio | Data Analyst</title>
   <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <!-- Add AOS Animation Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Add Typed.js -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-</head>
+  </head>
 <body>
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="loader"></div>
-  </div>
-
   <!-- Header Section -->
   <header class="hero">
     <nav class="navbar" id="navbar">
       <div class="logo">
-        <span class="logo-text">HARI</span>
-        <span class="logo-dot">.</span>
-      </div>
-      <div class="nav-toggle" id="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
       <ul class="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#education" class="nav-link">Education</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="hero-content" data-aos="fade-up">
-      <h1>Hi, I'm <span class="highlight">Hari</span></h1>
-      <div class="typed-container">
-        <span id="typed-text"></span>
-      </div>
-      <p class="tagline">Transforming Data into Actionable Insights</p>
-      <div class="cta-buttons">
-        <a href="#contact" class="cta-button primary">Get in Touch</a>
-        <a href="#projects" class="cta-button secondary">View My Work</a>
-      </div>
+    <div class="hero-content">
+      <h1>Hi There .i am Hari></h1>
+      <p class="tagline">Data Analyst | Appraiser | Insights MAESTRO</p>
+      <a href="#contact" class="cta-button primary">Get in Touch</a>
     </div>
-    <div class="scroll-indicator">
-      <div class="mouse"></div>
-      <p>Scroll Down</p>
-    </div>
-  </header>
+    </header>
 
   <!-- About Section -->
   <section id="about" class="section">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">About Me</h2>
+      <h2 class="section-title">About Me</h2>
       <div class="about-content">
-        <div class="about-image" data-aos="fade-right">
-          <div class="image-wrapper">
-            <img src="{{url_for('static',filename='profile.jpg')}}" alt="HARI">
-            <div class="experience-badge">
-              <span class="number">2+</span>
-              <span class="text">Years<br>Experience</span>
-            </div>
-          </div>
+        <div class="about-image">
+          <img src="https://via.placeholder.com/300" alt="HARI">
         </div>
-        <div class="about-text" data-aos="fade-left">
-          <h3>Data Analyst & Insights Specialist</h3>
-          <p class="highlight-text">Transforming complex datasets into actionable strategies</p>
-          <p>I'm a passionate Data Analyst with expertise in statistical analysis and data visualization. My approach combines technical precision with creative problem-solving to deliver meaningful insights.</p>
-          <div class="stats-container">
-            <div class="stat-item">
-              <span class="stat-number">50+</span>
-              <span class="stat-text">Projects Completed</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">30+</span>
-              <span class="stat-text">Happy Clients</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">3+</span>
-              <span class="stat-text">Awards Won</span>
-            </div>
-          </div>
-          <div class="about-buttons">
-            <a href="{{url_for('static',filename='resume.pdf')}}" class="download-cv">
-              Download CV <i class="fas fa-download"></i>
-            </a>
-            <div class="social-links">
-              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            </div>
-          </div>
+        <div class="about-text">
+          <p>I'm Hari, a passionate Data Analyst with a background in statistics and computer science, specializing in transforming complex datasets into actionable strategies.</p>
+          <br>
+          <p>Mission: To bridge data and decision-making by transforming complex information into actionable insights that drive impactful solutions.</p>
         </div>
       </div>
     </div>
@@ -104,35 +47,32 @@
   <!-- Projects Section -->
   <section id="projects" class="section">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
-      <div class="project-filters" data-aos="fade-up">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
-        <button class="filter-btn" data-filter="web-dev">Web Development</button>
-        <button class="filter-btn" data-filter="ai">AI Projects</button>
-      </div>
+      <h2 class="section-title">My Projects</h2>
       <div class="projects-grid">
-        <div class="project-card" data-aos="fade-up" data-category="ai">
-          <div class="project-image">
-            <img src="{{url_for('static',filename='project1.png')}}" alt="Dream Cars AI">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3>Dream Cars AI</h3>
-            <p>An AI-powered chatbot for car recommendations using natural language processing.</p>
-            <div class="project-tech">
-              <span>Python</span>
-              <span>TensorFlow</span>
-              <span>NLP</span>
-            </div>
+        <div class="project-card">
+          <img src="{{url_for('static',filename='project1.png')}}" alt="Project 1">
+          <h3>Dream Cars AI</h3>
+          <p>A responsive and interactive Chatbot showcasing my skills and projects.</p>
+          <div class="project-links">
+            <a href="https://myvprasad.github.io/carsproject_fronend/" target="_blank" class="button">GitHub</a>
           </div>
         </div>
-        <!-- Add more project cards similarly -->
+        <div class="project-card">
+          <img src="{{url_for('static',filename='project2.png')}}" alt="Project 2">
+          <h3>E-Commerce Website</h3>
+          <p>An E-Commerce website of Online shopping.</p>
+          <div class="project-links">
+            <a href="https://myvprasad.github.io/t5/" target="_blank" class="button">GitHub</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="C:\Users\6LABSYSTEM57\Downloads\project3.png" alt="Project 3">
+          <h3>Ticket Booking</h3>
+          <p>A website helps to book tickets for the movie.</p>
+          <div class="project-links">
+            <a href="https://myvprasad.github.io/booking-tickets/" target="_blank" class="button">GitHub</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -140,90 +80,87 @@
   <!-- Skills Section -->
   <section id="skills" class="section">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Technical Expertise</h2>
-      <div class="skills-container">
-        <div class="skills-category" data-aos="fade-right">
-          <h3>Data Analysis</h3>
-          <div class="skill-bars">
-            <div class="skill-bar">
-              <div class="skill-info">
-                <span>Python</span>
-                <span>90%</span>
-              </div>
-              <div class="progress-line python">
-                <span></span>
-              </div>
-            </div>
-            <!-- Add more skill bars -->
-          </div>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <i class="fas fa-code"></i>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+          </ul>
         </div>
-        <!-- Add more skill categories -->
+        <div class="skill-category">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Visualization</h3>
+          <ul>
+            <li>Tableau</li>
+            <li>Power BI</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <i class="fas fa-tools"></i>
+          <h3>Tools</h3>
+          <ul>
+            <li>Git</li>
+            <li>VS Code</li>
+            <li>Terminal</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Education Section with Timeline -->
-  <section id="education" class="section">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Educational Journey</h2>
-      <div class="timeline">
-        <div class="timeline-item" data-aos="fade-right">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Bachelor of Science</h3>
-            <h4>KBN COLLEGE</h4>
-            <p class="timeline-date">2022 - 2025</p>
-            <p>Major in Computer Science with focus on Data Analytics</p>
-            <div class="achievement">
-              <i class="fas fa-trophy"></i>
-              <span>72% Aggregate</span>
-            </div>
-          </div>
-        </div>
-        <!-- Add more timeline items -->
+ <!-- Education Section -->
+<section id="education" class="section">
+  <div class="container">
+    <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div class="education-list">
+      <div class="education-item">
+        <h3>Bachelor of Science</h3>
+        <p>KBN COLLEGE</p>
+        <p><strong>Year:</strong> 2022 - 2025</p>
+        <p><strong>Percentage:</strong> 72%</p>
+      </div>
+      <div class="education-item">
+        <h3>Intermediate (12th)</h3>
+        <p>Sarada educational Institution</p>
+        <p><strong>Year:</strong> 2020-2022</p>
+        <p><strong>Percentage:</strong> 80%</p>
+      </div>
+      <div class="education-item">
+        <h3>10th Grade</h3>
+        <p>Sri Chaitanya High School</p>
+        <p><strong>Year:</strong> 2020</p>
+        <p><strong>Percentage:</strong> 80%</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Let's Connect</h2>
+      <h2 class="section-title">Get in Touch</h2>
       <div class="contact-content">
-        <div class="contact-info" data-aos="fade-right">
-          <div class="contact-card">
+        <div class="contact-info">
+          <div class="contact-item">
             <i class="fas fa-envelope"></i>
-            <h3>Email</h3>
             <p>bhimavarapuhari2005@gmail.com</p>
           </div>
-          <div class="contact-card">
+          <div class="contact-item">
             <i class="fas fa-phone"></i>
-            <h3>Phone</h3>
             <p>+91 9491691647</p>
           </div>
-          <div class="contact-card">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>Location</h3>
-            <p>Vijayawada, India</p>
-          </div>
         </div>
-        <form class="contact-form" data-aos="fade-left" id="contactForm">
-          <div class="form-group">
-            <input type="text" id="name" required>
-            <label for="name">Your Name</label>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" required>
-            <label for="email">Your Email</label>
-          </div>
-          <div class="form-group">
-            <textarea id="message" required></textarea>
-            <label for="message">Your Message</label>
-          </div>
-          <button type="submit" class="submit-button">
-            Send Message
-            <i class="fas fa-paper-plane"></i>
-          </button>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="submit-button">Send Message</button>
         </form>
       </div>
     </div>
@@ -232,28 +169,15 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <span class="logo-text">HARI</span>
-          <span class="logo-dot">.</span>
-        </div>
-        <div class="social-links">
-          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-        </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 HARI. All rights reserved.</p>
-        <a href="#" class="scroll-top">
-          <i class="fas fa-arrow-up"></i>
-        </a>
-      </div>
+      <p>&copy; 2024 HARI. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="{{url_for('static',filename='main.js')}}"></script>
 </body>
 </html>
+
+
